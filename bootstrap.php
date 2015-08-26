@@ -13,7 +13,8 @@ $config = Setup::createAnnotationMetadataConfiguration([__DIR__."/src"], $isDevM
 
 // database configuration parameters
 $conn = [
-    'driver' => 'pdo_mysql',
+    'driver'   => 'pdo_mysql',
+    'host'     => 'localhost',
     'user'     => 'root',
     'password' => '',
     'dbname'   => '2015_08_doctrine_association_test',
