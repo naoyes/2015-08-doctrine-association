@@ -26,4 +26,37 @@ class Customer
      * @JoinColumn(name="cart_id", referencedColumnName="id")
      */
     private $cart;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set cart
+     *
+     * @param \OneToOne\Unidirectional\Customer2Cart\Cart $cart
+     * @return Customer
+     */
+    public function setCart(\OneToOne\Unidirectional\Customer2Cart\Cart $cart = null)
+    {
+        $this->cart = $cart;
+
+        return $this;
+    }
+
+    /**
+     * Get cart
+     *
+     * @return \OneToOne\Unidirectional\Customer2Cart\Cart 
+     */
+    public function getCart()
+    {
+        return $this->cart;
+    }
 }
