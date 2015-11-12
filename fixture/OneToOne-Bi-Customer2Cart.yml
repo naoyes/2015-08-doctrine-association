@@ -1,0 +1,5 @@
+OneToOne\Bidirectional\Customer2Cart\Customer:
+    customer1:
+OneToOne\Bidirectional\Customer2Cart\Cart:
+    cart1:
+      customer: @customer1
