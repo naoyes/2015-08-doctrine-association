@@ -1,0 +1,5 @@
+OneToMany\Unidirectional\Address:
+    address1:
+OneToMany\Unidirectional\User:
+    user1:
+        address: @address1
