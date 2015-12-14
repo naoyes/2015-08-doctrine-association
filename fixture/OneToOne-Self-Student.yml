@@ -1,0 +1,4 @@
+OneToOne\SelfReferencing\Student:
+    student1:
+    student2:
+        mentor: @student1
